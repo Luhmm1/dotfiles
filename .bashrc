@@ -19,7 +19,12 @@ alias tree='exa --icons --tree'
 alias vi='nvim'
 alias vim='nvim'
 alias vps='ssh debian@51.38.227.239'
-alias yo='yay -Qtdq'
+alias yi='yay -Slq | fzf --multi --preview "yay -Si {1}" | xargs -ro sudo yay -S'
+alias yr='yay -Qq | fzf --multi --preview "yay -Qi {1}" | xargs -ro sudo yay -Rns'
+alias yso='yay -Qtdq'
+alias ysu='yay -Qu'
+alias ysue='yay -Que'
+alias yu='yay -Syu'
 
 # bash
 export PS1="[\[$(tput sgr0)\]\[$(tput setaf 11)\]\u@\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput setaf 10)\]\W\[$(tput sgr0)\]]\\$ \[$(tput sgr0)\]"
