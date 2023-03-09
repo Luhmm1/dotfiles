@@ -1,0 +1,18 @@
+[commit]
+	gpgSign = true
+[core]
+	editor = code --wait
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[init]
+	defaultBranch = main
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[user]
+	name = Léo DEVILLE
+	email = 81935247+Luhmm1@users.noreply.github.com
+	signingKey = 112FCE45E66DCC6D6DBDAF1560CEFD535A8EE7CA
