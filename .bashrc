@@ -31,8 +31,6 @@ export PS1="[\[$(tput sgr0)\]\[$(tput setaf 11)\]\u@\h\[$(tput sgr0)\] \[$(tput 
 
 unset HISTFILE
 
-set -o vi
-
 # fzf
 [ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
 [ -f /usr/share/fzf/completion.bash ] && source /usr/share/fzf/completion.bash
@@ -56,11 +54,11 @@ export SSH_ASKPASS=/usr/bin/ksshaskpass
 export SSH_ASKPASS_REQUIRE=prefer
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
+  ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
 fi
 
 if [ ! -f "$SSH_AUTH_SOCK" ]; then
-    source "$XDG_RUNTIME_DIR/ssh-agent.env" > /dev/null
+  source "$XDG_RUNTIME_DIR/ssh-agent.env" > /dev/null
 fi
 
 # less
@@ -103,5 +101,5 @@ eval "$(starship init bash)"
 
 # tmux
 if [ -x /usr/bin/tmux ] && [ -n "$DISPLAY" ] && [ -z "$TMUX" ]; then
-    tmux attach || tmux > /dev/null 2>&1
+  tmux attach || tmux > /dev/null 2>&1
 fi
