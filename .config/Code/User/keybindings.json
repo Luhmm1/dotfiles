@@ -1,0 +1,14 @@
+[
+  {
+    "key": "ctrl+d",
+    "command": "editor.action.duplicateSelection"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "editor.action.smartSelect.grow"
+  },
+  {
+    "key": "ctrl+[IntlBackslash]",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  }
+]
