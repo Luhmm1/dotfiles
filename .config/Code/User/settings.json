@@ -22,7 +22,6 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.associations": {
-        "*.html": "html",
         "*.jsx": "javascriptreact"
     },
     "files.insertFinalNewline": true,
@@ -57,6 +56,7 @@
     "quarkus.tools.alwaysShowWelcomePage": false,
     "redhat.telemetry.enabled": false,
     "remote.restoreForwardedPorts": false,
+    "stylelint.validate": ["css", "scss"],
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
